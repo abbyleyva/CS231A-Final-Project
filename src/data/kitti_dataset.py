@@ -1,5 +1,5 @@
 """
-Basic KITTI dataset loader for 3D object detection
+KITTI dataset loader for 2D bounding box detection
 """
 
 import os
@@ -38,15 +38,40 @@ class KITTIDataset:
                 K = P2[:3, :3]
                 return K
         return None
+    
+    def draw_2d_bbox(self, image, bbox, label="Car", color=(0, 255, 0)):
+        """
+        Draw 2D bounding box on image
+        
+        Args:
+            image: numpy array of image
+            bbox: [x1, y1, x2, y2] coordinates
+            label: text label
+            color: RGB color tuple
+        """
+        x1, y1, x2, y2 = map(int, bbox)
+        
+        # Draw rectangle
+        cv2.rectangle(image, (x1, y1), (x2, y2), color, 2)
+        
+        # Draw label
+        cv2.putText(image, label, (x1, y1-10), cv2.FONT_HERSHEY_SIMPLEX, 0.7, color, 2)
+        
+        return image
 
 if __name__ == "__main__":
-    # Test the data loader
+    # Test with a sample 2D bounding box
     dataset = KITTIDataset('data/KITTI/2011_09_26_drive_0027')
     
     # Load first image
     img = dataset.load_image(0)
     print(f"Image shape: {img.shape}")
     
-    # Load calibration
-    K = dataset.load_calibration()
-    print(f"Camera matrix K:\n{K}")
+    # Draw a sample bounding box (you'll replace this with actual detections)
+    sample_bbox = [500, 200, 700, 300]  # [x1, y1, x2, y2]
+    img_with_bbox = dataset.draw_2d_bbox(img.copy(), sample_bbox, "Sample Car")
+    
+    # Save the result to see it
+    result_path = 'test_2d_bbox.jpg'
+    cv2.imwrite(result_path, cv2.cvtColor(img_with_bbox, cv2.COLOR_RGB2BGR))
+    print(f"Saved test image with 2D bbox to {result_path}")
