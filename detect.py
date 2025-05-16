@@ -9,7 +9,8 @@ model = YOLO("yolov8m.pt")
 #results = model(FILEPATH)
 
 #Here is an example
-results = model('/Users/rcarino/Documents/Stanford University - Academics/2024-2025 Academic Year/2025 Spring Quarter/CS 231A Computer Vision From 3D Perception to 3D Reconstruction and Beyond/Final Project/CS231A-Final-Project/tracklet_cars_frame_0.jpg')
+# results = model('/Users/rcarino/Documents/Stanford University - Academics/2024-2025 Academic Year/2025 Spring Quarter/CS 231A Computer Vision From 3D Perception to 3D Reconstruction and Beyond/Final Project/CS231A-Final-Project/tracklet_cars_frame_0.jpg')
+results = results = model('tracklet_cars_frame_0.jpg')
 
 # Show image with detections
 results[0].show()
