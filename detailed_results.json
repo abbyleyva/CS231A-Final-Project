@@ -1,0 +1,57 @@
+{
+  "evaluation_summary": {
+    "total_vehicles": 3,
+    "point_cloud_successes": 3,
+    "success_rate_percent": 100.0,
+    "significant_changes": 3,
+    "significant_rate_percent": 100.0,
+    "avg_points_per_vehicle": 5041.0,
+    "point_range": [
+      2263,
+      6430
+    ],
+    "avg_depth_change_percent": 75.88461949135444,
+    "max_depth_change_percent": 79.2408238115346,
+    "dimension_stats": {
+      "length": {
+        "mean": 4.443446859291817,
+        "std": 0.28539524492145885,
+        "min": 4.241641946289458,
+        "max": 4.847056685296535
+      },
+      "width": {
+        "mean": 1.3334867038780558,
+        "std": 0.2833743713465601,
+        "min": 0.9327348246908007,
+        "max": 1.5338626434716833
+      },
+      "height": {
+        "mean": 0.8342698073415976,
+        "std": 0.22477367960483838,
+        "min": 0.5163918211799304,
+        "max": 0.9932088004224312
+      }
+    }
+  },
+  "individual_results": [
+    {
+      "image": "tracklet_cars_frame_0.jpg",
+      "vehicle_id": 0,
+      "confidence": 0.7904509902000427,
+      "success": true,
+      "old_dimensions": [
+        4.0,
+        1.8,
+        1.5
+      ],
+      "new_dimensions": [
+        4.847056685296535,
+        0.9327348246908007,
+        0.5163918211799304
+      ],
+      "dimension_differences": [
+        0.8470566852965353,
+        0.8672651753091993,
+        0.9836081788200696
+      ],
+      "significant_change": 

@@ -2,6 +2,7 @@
 __pycache__/
 *.py[cod]
 *$py.class
+comprehensive_evaluation.py
 
 # C extensions
 *.so
@@ -172,3 +173,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+/data
+/data/KITTI/2011_09_26_drive_0027

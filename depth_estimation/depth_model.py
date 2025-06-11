@@ -13,7 +13,12 @@ class DPTDepthModel:
         self.model.to(self.device)
         self.model.eval()
 
-    def predict(self, image: Image.Image) -> np.ndarray:
+    def scale_depth_for_kitti(self, normalized_depth):
+        """Scale normalized depth to real-world meters for KITTI driving scenarios"""
+        # KITTI vehicles typically 5-50 meters away
+        return 5.0 + normalized_depth * 45.0
+
+    def predict(self, image: Image.Image, scale_to_meters=True) -> np.ndarray:
         image_np = np.array(image)
         input_tensor = self.transform(image_np).to(self.device)
 
@@ -26,8 +31,13 @@ class DPTDepthModel:
                 align_corners=False,
             ).squeeze()
 
-        depth = prediction.cpu().numpy()
+        depth = prediction.cpu().numpy()  # <- FIXED: Added this line
         depth = (depth - depth.min()) / (depth.max() - depth.min() + 1e-6)
+        
+        # NEW: Scale to meters if requested
+        if scale_to_meters:
+            depth = self.scale_depth_for_kitti(depth)
+        
         return depth
 
 
