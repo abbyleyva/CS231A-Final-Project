@@ -33,6 +33,12 @@ def fit_oriented_bbox(points: np.ndarray):
     max_proj = np.max(proj, axis=0)
     dims = max_proj - min_proj  # box dimensions (L, W, H)
 
+    ### trying to fix the problem posed by inverting depth in depth_model.py
+    #dims = np.sort(dims)  # Sort: [smallest, middle, largest]
+    #dims = [dims[2], dims[1], dims[0]] 
+    print(f"Raw PCA dims: {dims}") 
+    
+
     # Step 5: Compute center in PCA space and transform back
     center_pca = (min_proj + max_proj) / 2.0
     center_world = mean + center_pca @ axes  # back to original coords

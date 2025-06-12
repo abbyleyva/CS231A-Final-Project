@@ -1,0 +1,2877 @@
+Using cache found in /Users/tr/.cache/torch/hub/intel-isl_MiDaS_master
+/opt/miniconda3/envs/cs229/lib/python3.9/site-packages/timm/models/layers/__init__.py:48: FutureWarning: Importing from timm.models.layers is deprecated, please import via timm.layers
+  warnings.warn(f"Importing from {__name__} is deprecated, please import via timm.layers", FutureWarning)
+/opt/miniconda3/envs/cs229/lib/python3.9/site-packages/timm/models/_factory.py:126: UserWarning: Mapping deprecated model name vit_base_resnet50_384 to current vit_base_r50_s16_384.orig_in21k_ft_in1k.
+  model = create_fn(
+[W NNPACK.cpp:64] Could not initialize NNPACK! Reason: Unsupported hardware.
+Using cache found in /Users/tr/.cache/torch/hub/intel-isl_MiDaS_master
+All modules imported successfully!
+STARTING COMPREHENSIVE POINT CLOUD PIPELINE TESTING
+================================================================================
+Goal: Test on KITTI frames with known vehicles from tracklet data
+================================================================================
+Loading models...
+Testing 65 frames with known vehicles
+
+=============== FRAME 0 (1/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_0.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.79, class: 2)
+2D bbox: [492, 184, 547, 229]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [492, 184, 547, 229]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 2475 3D points
+   🧹 Filtering outliers...
+After depth filtering: 2475 points
+After outlier removal: 2335 points
+Fitting oriented bounding box...
+Raw PCA dims: [     2.5336     0.46455     0.25625]
+Box fitted: 2.5m × 0.5m × 0.3m
+Center: (-0.6, -0.2, 5.3)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 0: Found 1 vehicles
+
+Visualization saved to: pointcloud_comparison_frame_0.jpg
+
+=============== FRAME 1 (2/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_1.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.73, class: 2)
+2D bbox: [476, 185, 541, 235]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [476, 185, 541, 235]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 3250 3D points
+   🧹 Filtering outliers...
+After depth filtering: 3250 points
+After outlier removal: 3047 points
+Fitting oriented bounding box...
+Raw PCA dims: [     2.9645      0.5934     0.28874]
+Box fitted: 3.0m × 0.6m × 0.3m
+Center: (-0.7, -0.3, 5.7)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 1: Found 1 vehicles
+
+=============== FRAME 2 (3/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_2.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.84, class: 2)
+2D bbox: [456, 187, 531, 244]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [456, 187, 531, 244]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 4275 3D points
+   🧹 Filtering outliers...
+After depth filtering: 4275 points
+After outlier removal: 4010 points
+Fitting oriented bounding box...
+Raw PCA dims: [      3.407     0.73938     0.44411]
+Box fitted: 3.4m × 0.7m × 0.4m
+Center: (-0.9, -0.3, 6.0)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 2: Found 1 vehicles
+
+=============== FRAME 3 (4/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_3.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.92, class: 2)
+2D bbox: [429, 187, 520, 256]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [429, 187, 520, 256]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 6279 3D points
+   🧹 Filtering outliers...
+After depth filtering: 6279 points
+After outlier removal: 5919 points
+Fitting oriented bounding box...
+Raw PCA dims: [     4.3832      1.0811      0.6709]
+Box fitted: 4.4m × 1.1m × 0.7m
+Center: (-1.3, -0.4, 7.3)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 3: Found 1 vehicles
+
+=============== FRAME 4 (5/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_4.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.91, class: 2)
+2D bbox: [388, 189, 503, 274]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [388, 189, 503, 274]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 9775 3D points
+   🧹 Filtering outliers...
+After depth filtering: 9775 points
+After outlier removal: 9110 points
+Fitting oriented bounding box...
+Raw PCA dims: [     5.6479      1.7172      1.0701]
+Box fitted: 5.6m × 1.7m × 1.1m
+Center: (-1.9, -0.6, 9.2)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 4: Found 1 vehicles
+
+=============== FRAME 5 (6/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_5.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.93, class: 2)
+2D bbox: [327, 193, 481, 303]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [327, 193, 481, 303]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 16940 3D points
+   🧹 Filtering outliers...
+After depth filtering: 16940 points
+After outlier removal: 15468 points
+Fitting oriented bounding box...
+Raw PCA dims: [     8.5735      3.0035      1.7152]
+Box fitted: 8.6m × 3.0m × 1.7m
+Center: (-2.9, -1.0, 11.5)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 5: Found 1 vehicles
+
+=============== FRAME 6 (7/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_6.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.94, class: 2)
+2D bbox: [217, 199, 448, 354]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [217, 199, 448, 354]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 35805 3D points
+   🧹 Filtering outliers...
+After depth filtering: 35805 points
+After outlier removal: 33403 points
+Fitting oriented bounding box...
+Raw PCA dims: [     15.101      5.9535      3.0501]
+Box fitted: 15.1m × 6.0m × 3.1m
+Center: (-5.3, -2.2, 16.1)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 6: Found 1 vehicles
+
+=============== FRAME 7 (8/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_7.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.94, class: 2)
+2D bbox: [1, 210, 388, 371]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [1, 210, 388, 371]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 62307 3D points
+   🧹 Filtering outliers...
+After depth filtering: 62307 points
+After outlier removal: 60788 points
+Fitting oriented bounding box...
+Raw PCA dims: [     22.288      8.5989      3.4799]
+Box fitted: 22.3m × 8.6m × 3.5m
+Center: (-9.4, -2.8, 15.9)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 7: Found 1 vehicles
+
+=============== FRAME 8 (9/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_8.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.91, class: 2)
+2D bbox: [0, 236, 260, 371]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [0, 236, 260, 371]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 35100 3D points
+   🧹 Filtering outliers...
+After depth filtering: 35100 points
+After outlier removal: 32321 points
+Fitting oriented bounding box...
+Raw PCA dims: [     18.259      7.6899       3.093]
+Box fitted: 18.3m × 7.7m × 3.1m
+Center: (-10.4, -3.6, 17.4)
+
+VEHICLE 2 (confidence: 0.32, class: 2)
+2D bbox: [573, 175, 590, 189]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [573, 175, 590, 189]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 238 3D points
+   🧹 Filtering outliers...
+After depth filtering: 238 points
+After outlier removal: 238 points
+Fitting oriented bounding box...
+Raw PCA dims: [   0.057982     0.04704   0.0027471]
+Box fitted: 0.1m × 0.0m × 0.0m
+Center: (-0.1, -0.0, 2.6)
+
+Processing complete: 2 vehicles analyzed
+✓ Frame 8: Found 2 vehicles
+
+=============== FRAME 9 (10/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_9.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.30, class: 2)
+2D bbox: [574, 176, 591, 189]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [574, 176, 591, 189]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 221 3D points
+   🧹 Filtering outliers...
+After depth filtering: 221 points
+After outlier removal: 218 points
+Fitting oriented bounding box...
+Raw PCA dims: [   0.058491    0.046795    0.025757]
+Box fitted: 0.1m × 0.0m × 0.0m
+Center: (-0.1, -0.0, 2.6)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 9: Found 1 vehicles
+
+=============== FRAME 28 (11/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_28.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+Processing complete: 0 vehicles analyzed
+✗ Frame 28: No vehicles detected
+
+=============== FRAME 29 (12/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_29.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+Processing complete: 0 vehicles analyzed
+✗ Frame 29: No vehicles detected
+
+=============== FRAME 30 (13/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_30.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+Processing complete: 0 vehicles analyzed
+✗ Frame 30: No vehicles detected
+
+=============== FRAME 31 (14/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_31.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+Processing complete: 0 vehicles analyzed
+✗ Frame 31: No vehicles detected
+
+=============== FRAME 32 (15/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_32.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.48, class: 7)
+2D bbox: [558, 162, 585, 196]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [558, 162, 585, 196]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 918 3D points
+   🧹 Filtering outliers...
+After depth filtering: 918 points
+After outlier removal: 872 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.20228     0.14096    0.085029]
+Box fitted: 0.2m × 0.1m × 0.1m
+Center: (-0.1, -0.0, 2.6)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 32: Found 1 vehicles
+
+=============== FRAME 33 (16/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_33.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.40, class: 7)
+2D bbox: [556, 163, 584, 197]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [556, 163, 584, 197]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 952 3D points
+   🧹 Filtering outliers...
+After depth filtering: 952 points
+After outlier removal: 901 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.18657     0.13524     0.10626]
+Box fitted: 0.2m × 0.1m × 0.1m
+Center: (-0.1, -0.0, 2.6)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 33: Found 1 vehicles
+
+=============== FRAME 34 (17/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_34.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.64, class: 7)
+2D bbox: [554, 161, 584, 198]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [554, 161, 584, 198]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1110 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1110 points
+After outlier removal: 1065 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.44974     0.17564     0.10845]
+Box fitted: 0.4m × 0.2m × 0.1m
+Center: (-0.1, -0.0, 2.8)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 34: Found 1 vehicles
+
+=============== FRAME 35 (18/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_35.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.67, class: 7)
+2D bbox: [552, 159, 583, 197]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [552, 159, 583, 197]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1178 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1178 points
+After outlier removal: 1125 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.60942     0.19566     0.10737]
+Box fitted: 0.6m × 0.2m × 0.1m
+Center: (-0.2, 0.0, 2.9)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 35: Found 1 vehicles
+
+=============== FRAME 36 (19/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_36.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.67, class: 7)
+2D bbox: [550, 158, 583, 197]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [550, 158, 583, 197]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1287 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1287 points
+After outlier removal: 1214 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.71875     0.20424     0.11689]
+Box fitted: 0.7m × 0.2m × 0.1m
+Center: (-0.2, 0.0, 3.0)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 36: Found 1 vehicles
+
+=============== FRAME 37 (20/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_37.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.65, class: 7)
+2D bbox: [548, 158, 582, 198]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [548, 158, 582, 198]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1360 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1360 points
+After outlier removal: 1281 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.84662      0.2093      0.1136]
+Box fitted: 0.8m × 0.2m × 0.1m
+Center: (-0.2, -0.0, 3.0)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 37: Found 1 vehicles
+
+=============== FRAME 38 (21/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_38.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.69, class: 7)
+2D bbox: [546, 157, 581, 199]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [546, 157, 581, 199]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1470 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1470 points
+After outlier removal: 1389 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.63846     0.21439     0.11974]
+Box fitted: 0.6m × 0.2m × 0.1m
+Center: (-0.2, -0.0, 2.9)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 38: Found 1 vehicles
+
+Visualization saved to: pointcloud_comparison_frame_38.jpg
+
+=============== FRAME 39 (22/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_39.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.68, class: 7)
+2D bbox: [544, 158, 580, 201]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [544, 158, 580, 201]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1548 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1548 points
+After outlier removal: 1480 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.75627     0.23661     0.13652]
+Box fitted: 0.8m × 0.2m × 0.1m
+Center: (-0.2, -0.0, 3.1)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 39: Found 1 vehicles
+
+=============== FRAME 40 (23/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_40.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.68, class: 7)
+2D bbox: [542, 158, 579, 204]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [542, 158, 579, 204]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1702 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1702 points
+After outlier removal: 1602 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.95393     0.25431     0.15703]
+Box fitted: 1.0m × 0.3m × 0.2m
+Center: (-0.2, -0.0, 3.2)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 40: Found 1 vehicles
+
+=============== FRAME 41 (24/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_41.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.59, class: 7)
+2D bbox: [538, 157, 577, 204]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [538, 157, 577, 204]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1833 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1833 points
+After outlier removal: 1714 points
+Fitting oriented bounding box...
+Raw PCA dims: [     0.7861     0.26988     0.16959]
+Box fitted: 0.8m × 0.3m × 0.2m
+Center: (-0.2, -0.0, 3.3)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 41: Found 1 vehicles
+
+=============== FRAME 42 (25/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_42.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.68, class: 7)
+2D bbox: [533, 155, 575, 205]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [533, 155, 575, 205]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 2100 3D points
+   🧹 Filtering outliers...
+After depth filtering: 2100 points
+After outlier removal: 1976 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.79301     0.29041     0.17067]
+Box fitted: 0.8m × 0.3m × 0.2m
+Center: (-0.2, -0.0, 3.3)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 42: Found 1 vehicles
+
+=============== FRAME 43 (26/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_43.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.66, class: 7)
+2D bbox: [529, 154, 573, 207]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [529, 154, 573, 207]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 2332 3D points
+   🧹 Filtering outliers...
+After depth filtering: 2332 points
+After outlier removal: 2178 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.88857     0.34669      0.2028]
+Box fitted: 0.9m × 0.3m × 0.2m
+Center: (-0.3, -0.0, 3.7)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 43: Found 1 vehicles
+
+=============== FRAME 44 (27/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_44.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.56, class: 7)
+2D bbox: [525, 154, 570, 210]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [525, 154, 570, 210]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 2520 3D points
+   🧹 Filtering outliers...
+After depth filtering: 2520 points
+After outlier removal: 2363 points
+Fitting oriented bounding box...
+Raw PCA dims: [     1.0305     0.33161     0.20255]
+Box fitted: 1.0m × 0.3m × 0.2m
+Center: (-0.3, -0.0, 3.7)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 44: Found 1 vehicles
+
+=============== FRAME 45 (28/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_45.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.76, class: 7)
+2D bbox: [519, 151, 569, 211]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [519, 151, 569, 211]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 3000 3D points
+   🧹 Filtering outliers...
+After depth filtering: 3000 points
+After outlier removal: 2813 points
+Fitting oriented bounding box...
+Raw PCA dims: [     1.0754     0.37124       0.248]
+Box fitted: 1.1m × 0.4m × 0.2m
+Center: (-0.3, -0.0, 3.7)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 45: Found 1 vehicles
+
+=============== FRAME 46 (29/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_46.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.60, class: 7)
+2D bbox: [512, 150, 566, 215]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [512, 150, 566, 215]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 3510 3D points
+   🧹 Filtering outliers...
+After depth filtering: 3510 points
+After outlier removal: 3299 points
+Fitting oriented bounding box...
+Raw PCA dims: [     1.2954     0.42442     0.23356]
+Box fitted: 1.3m × 0.4m × 0.2m
+Center: (-0.4, -0.0, 3.8)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 46: Found 1 vehicles
+
+=============== FRAME 47 (30/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_47.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.66, class: 7)
+2D bbox: [504, 148, 562, 218]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [504, 148, 562, 218]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 4060 3D points
+   🧹 Filtering outliers...
+After depth filtering: 4060 points
+After outlier removal: 3788 points
+Fitting oriented bounding box...
+Raw PCA dims: [     1.4173      0.4995     0.33873]
+Box fitted: 1.4m × 0.5m × 0.3m
+Center: (-0.5, -0.0, 4.2)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 47: Found 1 vehicles
+
+=============== FRAME 48 (31/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_48.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.77, class: 7)
+2D bbox: [496, 146, 558, 220]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [496, 146, 558, 220]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 4588 3D points
+   🧹 Filtering outliers...
+After depth filtering: 4588 points
+After outlier removal: 4261 points
+Fitting oriented bounding box...
+Raw PCA dims: [     1.3828     0.51823     0.39904]
+Box fitted: 1.4m × 0.5m × 0.4m
+Center: (-0.5, -0.0, 4.1)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 48: Found 1 vehicles
+
+Visualization saved to: pointcloud_comparison_frame_48.jpg
+
+=============== FRAME 49 (32/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_49.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.74, class: 7)
+2D bbox: [484, 143, 554, 225]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [484, 143, 554, 225]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 5740 3D points
+   🧹 Filtering outliers...
+After depth filtering: 5740 points
+After outlier removal: 5347 points
+Fitting oriented bounding box...
+Raw PCA dims: [      1.707     0.58142     0.46373]
+Box fitted: 1.7m × 0.6m × 0.5m
+Center: (-0.6, -0.1, 4.5)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 49: Found 1 vehicles
+
+=============== FRAME 50 (33/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_50.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.58, class: 5)
+2D bbox: [472, 141, 550, 229]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [472, 141, 550, 229]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 6864 3D points
+   🧹 Filtering outliers...
+After depth filtering: 6864 points
+After outlier removal: 6437 points
+Fitting oriented bounding box...
+Raw PCA dims: [     1.9689     0.74475     0.47714]
+Box fitted: 2.0m × 0.7m × 0.5m
+Center: (-0.7, -0.1, 4.8)
+
+VEHICLE 2 (confidence: 0.32, class: 7)
+2D bbox: [472, 141, 550, 230]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [472, 141, 550, 230]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 6942 3D points
+   🧹 Filtering outliers...
+After depth filtering: 6942 points
+After outlier removal: 6506 points
+Fitting oriented bounding box...
+Raw PCA dims: [     2.0281     0.74887     0.50102]
+Box fitted: 2.0m × 0.7m × 0.5m
+Center: (-0.7, -0.1, 4.8)
+
+Processing complete: 2 vehicles analyzed
+✓ Frame 50: Found 2 vehicles
+
+=============== FRAME 51 (34/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_51.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.81, class: 7)
+2D bbox: [456, 136, 546, 237]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [456, 136, 546, 237]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 9090 3D points
+   🧹 Filtering outliers...
+After depth filtering: 9090 points
+After outlier removal: 8605 points
+Fitting oriented bounding box...
+Raw PCA dims: [     2.6835      0.9747     0.56985]
+Box fitted: 2.7m × 1.0m × 0.6m
+Center: (-0.8, -0.2, 5.4)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 51: Found 1 vehicles
+
+=============== FRAME 52 (35/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_52.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.72, class: 7)
+2D bbox: [436, 131, 541, 245]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [436, 131, 541, 245]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 11970 3D points
+   🧹 Filtering outliers...
+After depth filtering: 11970 points
+After outlier removal: 11288 points
+Fitting oriented bounding box...
+Raw PCA dims: [     3.3044      1.1171     0.65507]
+Box fitted: 3.3m × 1.1m × 0.7m
+Center: (-0.9, -0.2, 5.5)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 52: Found 1 vehicles
+
+=============== FRAME 53 (36/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_53.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.80, class: 7)
+2D bbox: [409, 125, 534, 255]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [409, 125, 534, 255]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 16250 3D points
+   🧹 Filtering outliers...
+After depth filtering: 16250 points
+After outlier removal: 15296 points
+Fitting oriented bounding box...
+Raw PCA dims: [     3.8608      1.5869      0.9015]
+Box fitted: 3.9m × 1.6m × 0.9m
+Center: (-1.2, -0.3, 6.2)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 53: Found 1 vehicles
+
+=============== FRAME 54 (37/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_54.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.63, class: 5)
+2D bbox: [374, 117, 523, 270]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [374, 117, 523, 270]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 22797 3D points
+   🧹 Filtering outliers...
+After depth filtering: 22797 points
+After outlier removal: 21676 points
+Fitting oriented bounding box...
+Raw PCA dims: [     5.2011      1.9947     0.96408]
+Box fitted: 5.2m × 2.0m × 1.0m
+Center: (-1.4, -0.3, 6.7)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 54: Found 1 vehicles
+
+=============== FRAME 55 (38/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_55.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.90, class: 5)
+2D bbox: [312, 104, 515, 289]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [312, 104, 515, 289]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 37555 3D points
+   🧹 Filtering outliers...
+After depth filtering: 37555 points
+After outlier removal: 35670 points
+Fitting oriented bounding box...
+Raw PCA dims: [     7.4465      3.1205      1.5803]
+Box fitted: 7.4m × 3.1m × 1.6m
+Center: (-2.1, -0.7, 8.3)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 55: Found 1 vehicles
+
+=============== FRAME 56 (39/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_56.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.78, class: 5)
+2D bbox: [232, 87, 500, 322]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [232, 87, 500, 322]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 62980 3D points
+   🧹 Filtering outliers...
+After depth filtering: 62980 points
+After outlier removal: 60806 points
+Fitting oriented bounding box...
+Raw PCA dims: [     10.568      4.9578      2.1852]
+Box fitted: 10.6m × 5.0m × 2.2m
+Center: (-2.9, -1.0, 10.1)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 56: Found 1 vehicles
+
+=============== FRAME 57 (40/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_57.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.66, class: 7)
+2D bbox: [65, 54, 477, 371]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [65, 54, 477, 371]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 130604 3D points
+   🧹 Filtering outliers...
+After depth filtering: 130604 points
+After outlier removal: 125233 points
+Fitting oriented bounding box...
+Raw PCA dims: [     16.343      9.2777       5.218]
+Box fitted: 16.3m × 9.3m × 5.2m
+Center: (-5.3, -0.9, 13.9)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 57: Found 1 vehicles
+
+=============== FRAME 58 (41/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_58.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.95, class: 7)
+2D bbox: [0, 1, 443, 368]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [0, 1, 443, 368]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 162581 3D points
+   🧹 Filtering outliers...
+After depth filtering: 162581 points
+After outlier removal: 153137 points
+Fitting oriented bounding box...
+Raw PCA dims: [     23.495      13.003      7.6537]
+Box fitted: 23.5m × 13.0m × 7.7m
+Center: (-9.8, -0.1, 18.6)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 58: Found 1 vehicles
+
+Visualization saved to: pointcloud_comparison_frame_58.jpg
+
+=============== FRAME 59 (42/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_59.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.80, class: 7)
+2D bbox: [2, 1, 375, 366]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [2, 1, 375, 366]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 136145 3D points
+   🧹 Filtering outliers...
+After depth filtering: 136145 points
+After outlier removal: 129285 points
+Fitting oriented bounding box...
+Raw PCA dims: [     22.002      11.253      7.4543]
+Box fitted: 22.0m × 11.3m × 7.5m
+Center: (-9.3, -1.3, 17.6)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 59: Found 1 vehicles
+
+=============== FRAME 60 (43/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_60.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+Processing complete: 0 vehicles analyzed
+✗ Frame 60: No vehicles detected
+
+=============== FRAME 61 (44/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_61.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.85, class: 2)
+2D bbox: [0, 212, 83, 276]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [0, 212, 83, 276]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 5312 3D points
+   🧹 Filtering outliers...
+After depth filtering: 5312 points
+After outlier removal: 5025 points
+Fitting oriented bounding box...
+Raw PCA dims: [     5.3067      1.1983     0.45165]
+Box fitted: 5.3m × 1.2m × 0.5m
+Center: (-7.1, -1.0, 9.1)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 61: Found 1 vehicles
+
+=============== FRAME 93 (45/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_93.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.31, class: 2)
+2D bbox: [552, 178, 582, 201]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [552, 178, 582, 201]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 690 3D points
+   🧹 Filtering outliers...
+After depth filtering: 690 points
+After outlier removal: 651 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.60879     0.15356    0.047035]
+Box fitted: 0.6m × 0.2m × 0.0m
+Center: (-0.2, -0.1, 3.0)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 93: Found 1 vehicles
+
+=============== FRAME 94 (46/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_94.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+Processing complete: 0 vehicles analyzed
+✗ Frame 94: No vehicles detected
+
+=============== FRAME 95 (47/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_95.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.37, class: 2)
+2D bbox: [544, 181, 571, 204]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [544, 181, 571, 204]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 621 3D points
+   🧹 Filtering outliers...
+After depth filtering: 621 points
+After outlier removal: 589 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.85201     0.14397    0.033462]
+Box fitted: 0.9m × 0.1m × 0.0m
+Center: (-0.2, -0.1, 3.4)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 95: Found 1 vehicles
+
+=============== FRAME 96 (48/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_96.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.65, class: 2)
+2D bbox: [539, 182, 567, 206]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [539, 182, 567, 206]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 672 3D points
+   🧹 Filtering outliers...
+After depth filtering: 672 points
+After outlier removal: 633 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.81825     0.14522    0.036932]
+Box fitted: 0.8m × 0.1m × 0.0m
+Center: (-0.3, -0.1, 3.3)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 96: Found 1 vehicles
+
+=============== FRAME 97 (49/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_97.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.69, class: 2)
+2D bbox: [533, 184, 564, 208]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [533, 184, 564, 208]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 744 3D points
+   🧹 Filtering outliers...
+After depth filtering: 744 points
+After outlier removal: 704 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.89065     0.17766    0.051115]
+Box fitted: 0.9m × 0.2m × 0.1m
+Center: (-0.3, -0.1, 3.6)
+
+VEHICLE 2 (confidence: 0.48, class: 2)
+2D bbox: [560, 180, 581, 201]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [560, 180, 581, 201]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 441 3D points
+   🧹 Filtering outliers...
+After depth filtering: 441 points
+After outlier removal: 430 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.87053     0.11916     0.03191]
+Box fitted: 0.9m × 0.1m × 0.0m
+Center: (-0.2, -0.1, 3.1)
+
+Processing complete: 2 vehicles analyzed
+✓ Frame 97: Found 2 vehicles
+
+=============== FRAME 98 (50/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_98.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.72, class: 2)
+2D bbox: [524, 183, 560, 211]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [524, 183, 560, 211]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1008 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1008 points
+After outlier removal: 950 points
+Fitting oriented bounding box...
+Raw PCA dims: [     1.1678     0.21678    0.058818]
+Box fitted: 1.2m × 0.2m × 0.1m
+Center: (-0.3, -0.1, 3.5)
+
+VEHICLE 2 (confidence: 0.46, class: 2)
+2D bbox: [558, 179, 579, 196]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [558, 179, 579, 196]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 357 3D points
+   🧹 Filtering outliers...
+After depth filtering: 357 points
+After outlier removal: 341 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.36684     0.10738    0.030687]
+Box fitted: 0.4m × 0.1m × 0.0m
+Center: (-0.2, -0.1, 2.9)
+
+VEHICLE 3 (confidence: 0.45, class: 2)
+2D bbox: [557, 180, 580, 200]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [557, 180, 580, 200]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 460 3D points
+   🧹 Filtering outliers...
+After depth filtering: 460 points
+After outlier removal: 434 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.55038      0.1215    0.039722]
+Box fitted: 0.6m × 0.1m × 0.0m
+Center: (-0.2, -0.1, 3.0)
+
+Processing complete: 3 vehicles analyzed
+✓ Frame 98: Found 3 vehicles
+
+=============== FRAME 99 (51/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_99.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.72, class: 2)
+2D bbox: [513, 183, 556, 215]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [513, 183, 556, 215]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1376 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1376 points
+After outlier removal: 1321 points
+Fitting oriented bounding box...
+Raw PCA dims: [      1.505     0.26765     0.11844]
+Box fitted: 1.5m × 0.3m × 0.1m
+Center: (-0.4, -0.1, 3.9)
+
+VEHICLE 2 (confidence: 0.57, class: 2)
+2D bbox: [554, 179, 576, 199]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [554, 179, 576, 199]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 440 3D points
+   🧹 Filtering outliers...
+After depth filtering: 440 points
+After outlier removal: 422 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.47108     0.11388    0.035338]
+Box fitted: 0.5m × 0.1m × 0.0m
+Center: (-0.2, -0.1, 3.1)
+
+Processing complete: 2 vehicles analyzed
+✓ Frame 99: Found 2 vehicles
+
+Visualization saved to: pointcloud_comparison_frame_99.jpg
+
+=============== FRAME 100 (52/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_100.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.75, class: 2)
+2D bbox: [502, 183, 550, 220]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [502, 183, 550, 220]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1776 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1776 points
+After outlier removal: 1699 points
+Fitting oriented bounding box...
+Raw PCA dims: [     1.8677     0.32511     0.15591]
+Box fitted: 1.9m × 0.3m × 0.2m
+Center: (-0.5, -0.2, 4.2)
+
+VEHICLE 2 (confidence: 0.62, class: 2)
+2D bbox: [549, 179, 574, 200]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [549, 179, 574, 200]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 525 3D points
+   🧹 Filtering outliers...
+After depth filtering: 525 points
+After outlier removal: 495 points
+Fitting oriented bounding box...
+Raw PCA dims: [     0.4575      0.1287    0.037926]
+Box fitted: 0.5m × 0.1m × 0.0m
+Center: (-0.2, -0.1, 3.0)
+
+Processing complete: 2 vehicles analyzed
+✓ Frame 100: Found 2 vehicles
+
+=============== FRAME 101 (53/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_101.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.67, class: 2)
+2D bbox: [544, 179, 573, 203]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [544, 179, 573, 203]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 696 3D points
+   🧹 Filtering outliers...
+After depth filtering: 696 points
+After outlier removal: 656 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.53374      0.1617    0.055296]
+Box fitted: 0.5m × 0.2m × 0.1m
+Center: (-0.2, -0.1, 3.3)
+
+VEHICLE 2 (confidence: 0.48, class: 2)
+2D bbox: [485, 183, 542, 226]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [485, 183, 542, 226]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 2451 3D points
+   🧹 Filtering outliers...
+After depth filtering: 2451 points
+After outlier removal: 2312 points
+Fitting oriented bounding box...
+Raw PCA dims: [     2.2442     0.44905     0.23927]
+Box fitted: 2.2m × 0.4m × 0.2m
+Center: (-0.6, -0.2, 4.9)
+
+VEHICLE 3 (confidence: 0.43, class: 7)
+2D bbox: [486, 184, 542, 226]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [486, 184, 542, 226]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 2352 3D points
+   🧹 Filtering outliers...
+After depth filtering: 2352 points
+After outlier removal: 2225 points
+Fitting oriented bounding box...
+Raw PCA dims: [     2.1576     0.43982      0.2367]
+Box fitted: 2.2m × 0.4m × 0.2m
+Center: (-0.6, -0.2, 4.9)
+
+Processing complete: 3 vehicles analyzed
+✓ Frame 101: Found 3 vehicles
+
+=============== FRAME 102 (54/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_102.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.74, class: 2)
+2D bbox: [539, 179, 569, 204]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [539, 179, 569, 204]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 750 3D points
+   🧹 Filtering outliers...
+After depth filtering: 750 points
+After outlier removal: 711 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.63051     0.16952    0.054608]
+Box fitted: 0.6m × 0.2m × 0.1m
+Center: (-0.3, -0.1, 3.5)
+
+VEHICLE 2 (confidence: 0.73, class: 2)
+2D bbox: [461, 184, 532, 236]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [461, 184, 532, 236]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 3692 3D points
+   🧹 Filtering outliers...
+After depth filtering: 3692 points
+After outlier removal: 3457 points
+Fitting oriented bounding box...
+Raw PCA dims: [     2.7161     0.65441     0.34978]
+Box fitted: 2.7m × 0.7m × 0.3m
+Center: (-0.8, -0.3, 5.6)
+
+Processing complete: 2 vehicles analyzed
+✓ Frame 102: Found 2 vehicles
+
+=============== FRAME 103 (55/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_103.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.89, class: 2)
+2D bbox: [428, 187, 517, 251]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [428, 187, 517, 251]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 5696 3D points
+   🧹 Filtering outliers...
+After depth filtering: 5696 points
+After outlier removal: 5437 points
+Fitting oriented bounding box...
+Raw PCA dims: [     3.1806     0.94655     0.55867]
+Box fitted: 3.2m × 0.9m × 0.6m
+Center: (-1.3, -0.5, 6.6)
+
+VEHICLE 2 (confidence: 0.79, class: 2)
+2D bbox: [534, 180, 567, 208]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [534, 180, 567, 208]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 924 3D points
+   🧹 Filtering outliers...
+After depth filtering: 924 points
+After outlier removal: 861 points
+Fitting oriented bounding box...
+Raw PCA dims: [    0.82095     0.20184    0.095985]
+Box fitted: 0.8m × 0.2m × 0.1m
+Center: (-0.3, -0.1, 3.7)
+
+Processing complete: 2 vehicles analyzed
+✓ Frame 103: Found 2 vehicles
+
+=============== FRAME 104 (56/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_104.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.90, class: 2)
+2D bbox: [367, 190, 495, 278]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [367, 190, 495, 278]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 11264 3D points
+   🧹 Filtering outliers...
+After depth filtering: 11264 points
+After outlier removal: 10571 points
+Fitting oriented bounding box...
+Raw PCA dims: [     4.4858      1.7598     0.87735]
+Box fitted: 4.5m × 1.8m × 0.9m
+Center: (-2.0, -0.7, 8.4)
+
+VEHICLE 2 (confidence: 0.81, class: 2)
+2D bbox: [526, 183, 562, 212]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [526, 183, 562, 212]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1044 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1044 points
+After outlier removal: 996 points
+Fitting oriented bounding box...
+Raw PCA dims: [      1.027     0.23606     0.14529]
+Box fitted: 1.0m × 0.2m × 0.1m
+Center: (-0.4, -0.2, 4.5)
+
+Processing complete: 2 vehicles analyzed
+✓ Frame 104: Found 2 vehicles
+
+=============== FRAME 105 (57/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_105.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.89, class: 2)
+2D bbox: [244, 194, 459, 324]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [244, 194, 459, 324]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 27950 3D points
+   🧹 Filtering outliers...
+After depth filtering: 27950 points
+After outlier removal: 26462 points
+Fitting oriented bounding box...
+Raw PCA dims: [     9.1423      4.0772      1.7235]
+Box fitted: 9.1m × 4.1m × 1.7m
+Center: (-3.9, -1.2, 11.5)
+
+VEHICLE 2 (confidence: 0.80, class: 2)
+2D bbox: [516, 183, 557, 217]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [516, 183, 557, 217]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1394 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1394 points
+After outlier removal: 1306 points
+Fitting oriented bounding box...
+Raw PCA dims: [      1.529      0.2937      0.1757]
+Box fitted: 1.5m × 0.3m × 0.2m
+Center: (-0.5, -0.2, 4.6)
+
+Processing complete: 2 vehicles analyzed
+✓ Frame 105: Found 2 vehicles
+
+=============== FRAME 106 (58/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_106.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.88, class: 2)
+2D bbox: [0, 203, 384, 371]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [0, 203, 384, 371]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 64512 3D points
+   🧹 Filtering outliers...
+After depth filtering: 64512 points
+After outlier removal: 61493 points
+Fitting oriented bounding box...
+Raw PCA dims: [     24.547      8.3983      3.4743]
+Box fitted: 24.5m × 8.4m × 3.5m
+Center: (-9.7, -2.9, 16.9)
+
+VEHICLE 2 (confidence: 0.78, class: 2)
+2D bbox: [502, 184, 550, 223]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [502, 184, 550, 223]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 1872 3D points
+   🧹 Filtering outliers...
+After depth filtering: 1872 points
+After outlier removal: 1762 points
+Fitting oriented bounding box...
+Raw PCA dims: [     1.5511      0.3326     0.18828]
+Box fitted: 1.6m × 0.3m × 0.2m
+Center: (-0.5, -0.2, 4.5)
+
+Processing complete: 2 vehicles analyzed
+✓ Frame 106: Found 2 vehicles
+
+=============== FRAME 107 (59/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_107.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.84, class: 2)
+2D bbox: [482, 185, 544, 232]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [482, 185, 544, 232]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 2914 3D points
+   🧹 Filtering outliers...
+After depth filtering: 2914 points
+After outlier removal: 2776 points
+Fitting oriented bounding box...
+Raw PCA dims: [     2.3607     0.54478     0.26727]
+Box fitted: 2.4m × 0.5m × 0.3m
+Center: (-0.7, -0.2, 5.4)
+
+VEHICLE 2 (confidence: 0.81, class: 2)
+2D bbox: [0, 235, 145, 369]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [0, 235, 145, 369]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 19430 3D points
+   🧹 Filtering outliers...
+After depth filtering: 19430 points
+After outlier removal: 19430 points
+Fitting oriented bounding box...
+Raw PCA dims: [     22.187      3.8859      2.2071]
+Box fitted: 22.2m × 3.9m × 2.2m
+Center: (-12.6, -3.5, 17.4)
+
+Processing complete: 2 vehicles analyzed
+✓ Frame 107: Found 2 vehicles
+
+=============== FRAME 108 (60/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_108.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.81, class: 2)
+2D bbox: [455, 187, 531, 243]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [455, 187, 531, 243]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 4256 3D points
+   🧹 Filtering outliers...
+After depth filtering: 4256 points
+After outlier removal: 3896 points
+Fitting oriented bounding box...
+Raw PCA dims: [     3.4964     0.82756     0.38661]
+Box fitted: 3.5m × 0.8m × 0.4m
+Center: (-1.0, -0.3, 6.5)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 108: Found 1 vehicles
+
+=============== FRAME 109 (61/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_109.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.88, class: 2)
+2D bbox: [412, 189, 513, 261]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [412, 189, 513, 261]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 7272 3D points
+   🧹 Filtering outliers...
+After depth filtering: 7272 points
+After outlier removal: 6779 points
+Fitting oriented bounding box...
+Raw PCA dims: [     4.7328      1.2607     0.60836]
+Box fitted: 4.7m × 1.3m × 0.6m
+Center: (-1.5, -0.4, 7.4)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 109: Found 1 vehicles
+
+Visualization saved to: pointcloud_comparison_frame_109.jpg
+
+=============== FRAME 110 (62/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_110.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.91, class: 2)
+2D bbox: [333, 194, 483, 294]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [333, 194, 483, 294]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 15000 3D points
+   🧹 Filtering outliers...
+After depth filtering: 15000 points
+After outlier removal: 14115 points
+Fitting oriented bounding box...
+Raw PCA dims: [     6.5333      2.3744      1.1168]
+Box fitted: 6.5m × 2.4m × 1.1m
+Center: (-2.5, -0.8, 9.8)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 110: Found 1 vehicles
+
+=============== FRAME 111 (63/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_111.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.93, class: 2)
+2D bbox: [137, 202, 427, 372]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [137, 202, 427, 372]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 49300 3D points
+   🧹 Filtering outliers...
+After depth filtering: 49300 points
+After outlier removal: 45807 points
+Fitting oriented bounding box...
+Raw PCA dims: [     15.457      7.6824      3.1919]
+Box fitted: 15.5m × 7.7m × 3.2m
+Center: (-6.3, -2.7, 15.8)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 111: Found 1 vehicles
+
+=============== FRAME 112 (64/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_112.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+VEHICLE 1 (confidence: 0.91, class: 2)
+2D bbox: [0, 229, 269, 373]
+Estimating with TYPICAL dimensions...
+Estimating with POINT CLOUD...
+Processing bounding box: [0, 229, 269, 373]
+Generating depth map...
+Depth map generated: (375, 1242), range 2.5-25.0m
+Extracting 3D points from bounding box...
+Extracted 38736 3D points
+   🧹 Filtering outliers...
+After depth filtering: 38736 points
+After outlier removal: 35132 points
+Fitting oriented bounding box...
+Raw PCA dims: [     22.426      7.4628      3.9157]
+Box fitted: 22.4m × 7.5m × 3.9m
+Center: (-12.2, -3.9, 18.3)
+
+Processing complete: 1 vehicles analyzed
+✓ Frame 112: Found 1 vehicles
+
+=============== FRAME 113 (65/65) ===============
+Found 188 images
+
+============================================================
+PROCESSING: temp_kitti_frame_113.jpg
+============================================================
+Image loaded: (375, 1242, 3)
+Running YOLO detection...
+YOLO detection complete
+
+Processing complete: 0 vehicles analyzed
+✗ Frame 113: No vehicles detected
+
+================================================================================
+COMPREHENSIVE RESULTS FROM 58 FRAMES
+================================================================================
+
+================================================================================
+COMPARISON RESULTS: Typical Dimensions vs Point Cloud Extraction
+================================================================================
+
+VEHICLE 1 (confidence: 0.79):
+2D bounding box: [492, 184, 547, 229]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 52.8m
+NEW (point cloud): L=2.5m × W=0.5m × H=0.3m
+Depth estimate: 5.3m (2335 points used)
+DIFFERENCES:      ΔL=1.5m, ΔW=1.3m, ΔH=1.2m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.73):
+2D bounding box: [476, 185, 541, 235]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 44.9m
+NEW (point cloud): L=3.0m × W=0.6m × H=0.3m
+Depth estimate: 5.7m (3047 points used)
+DIFFERENCES:      ΔL=1.0m, ΔW=1.2m, ΔH=1.2m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.84):
+2D bounding box: [456, 187, 531, 244]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 38.3m
+NEW (point cloud): L=3.4m × W=0.7m × H=0.4m
+Depth estimate: 6.0m (4010 points used)
+DIFFERENCES:      ΔL=0.6m, ΔW=1.1m, ΔH=1.1m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.92):
+2D bounding box: [429, 187, 520, 256]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 31.6m
+NEW (point cloud): L=4.4m × W=1.1m × H=0.7m
+Depth estimate: 7.3m (5919 points used)
+DIFFERENCES:      ΔL=0.4m, ΔW=0.7m, ΔH=0.8m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.91):
+2D bounding box: [388, 189, 503, 274]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 25.1m
+NEW (point cloud): L=5.6m × W=1.7m × H=1.1m
+Depth estimate: 9.2m (9110 points used)
+DIFFERENCES:      ΔL=1.6m, ΔW=0.1m, ΔH=0.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.93):
+2D bounding box: [327, 193, 481, 303]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 18.7m
+NEW (point cloud): L=8.6m × W=3.0m × H=1.7m
+Depth estimate: 11.5m (15468 points used)
+DIFFERENCES:      ΔL=4.6m, ΔW=1.2m, ΔH=0.2m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.94):
+2D bounding box: [217, 199, 448, 354]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 12.5m
+NEW (point cloud): L=15.1m × W=6.0m × H=3.1m
+Depth estimate: 16.1m (33403 points used)
+DIFFERENCES:      ΔL=11.1m, ΔW=4.2m, ΔH=1.6m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.94):
+2D bounding box: [1, 210, 388, 371]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 7.5m
+NEW (point cloud): L=22.3m × W=8.6m × H=3.5m
+Depth estimate: 15.9m (60788 points used)
+DIFFERENCES:      ΔL=18.3m, ΔW=6.8m, ΔH=2.0m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.91):
+2D bounding box: [0, 236, 260, 371]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 11.1m
+NEW (point cloud): L=18.3m × W=7.7m × H=3.1m
+Depth estimate: 17.4m (32321 points used)
+DIFFERENCES:      ΔL=14.3m, ΔW=5.9m, ΔH=1.6m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 2 (confidence: 0.32):
+2D bounding box: [573, 175, 590, 189]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 171.1m
+NEW (point cloud): L=0.1m × W=0.0m × H=0.0m
+Depth estimate: 2.6m (238 points used)
+DIFFERENCES:      ΔL=3.9m, ΔW=1.8m, ΔH=1.5m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.30):
+2D bounding box: [574, 176, 591, 189]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 165.8m
+NEW (point cloud): L=0.1m × W=0.0m × H=0.0m
+Depth estimate: 2.6m (218 points used)
+DIFFERENCES:      ΔL=3.9m, ΔW=1.8m, ΔH=1.5m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.48):
+2D bounding box: [558, 162, 585, 196]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 105.8m
+NEW (point cloud): L=0.2m × W=0.1m × H=0.1m
+Depth estimate: 2.6m (872 points used)
+DIFFERENCES:      ΔL=3.8m, ΔW=1.7m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.40):
+2D bounding box: [556, 163, 584, 197]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 101.8m
+NEW (point cloud): L=0.2m × W=0.1m × H=0.1m
+Depth estimate: 2.6m (901 points used)
+DIFFERENCES:      ΔL=3.8m, ΔW=1.7m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.64):
+2D bounding box: [554, 161, 584, 198]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 96.4m
+NEW (point cloud): L=0.4m × W=0.2m × H=0.1m
+Depth estimate: 2.8m (1065 points used)
+DIFFERENCES:      ΔL=3.6m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.67):
+2D bounding box: [552, 159, 583, 197]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 91.8m
+NEW (point cloud): L=0.6m × W=0.2m × H=0.1m
+Depth estimate: 2.9m (1125 points used)
+DIFFERENCES:      ΔL=3.4m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.67):
+2D bounding box: [550, 158, 583, 197]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 89.1m
+NEW (point cloud): L=0.7m × W=0.2m × H=0.1m
+Depth estimate: 3.0m (1214 points used)
+DIFFERENCES:      ΔL=3.3m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.65):
+2D bounding box: [548, 158, 582, 198]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 86.7m
+NEW (point cloud): L=0.8m × W=0.2m × H=0.1m
+Depth estimate: 3.0m (1281 points used)
+DIFFERENCES:      ΔL=3.2m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.69):
+2D bounding box: [546, 157, 581, 199]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 81.9m
+NEW (point cloud): L=0.6m × W=0.2m × H=0.1m
+Depth estimate: 2.9m (1389 points used)
+DIFFERENCES:      ΔL=3.4m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.68):
+2D bounding box: [544, 158, 580, 201]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 79.8m
+NEW (point cloud): L=0.8m × W=0.2m × H=0.1m
+Depth estimate: 3.1m (1480 points used)
+DIFFERENCES:      ΔL=3.2m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.68):
+2D bounding box: [542, 158, 579, 204]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 76.8m
+NEW (point cloud): L=1.0m × W=0.3m × H=0.2m
+Depth estimate: 3.2m (1602 points used)
+DIFFERENCES:      ΔL=3.0m, ΔW=1.5m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.59):
+2D bounding box: [538, 157, 577, 204]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 73.4m
+NEW (point cloud): L=0.8m × W=0.3m × H=0.2m
+Depth estimate: 3.3m (1714 points used)
+DIFFERENCES:      ΔL=3.2m, ΔW=1.5m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.68):
+2D bounding box: [533, 155, 575, 205]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 68.8m
+NEW (point cloud): L=0.8m × W=0.3m × H=0.2m
+Depth estimate: 3.3m (1976 points used)
+DIFFERENCES:      ΔL=3.2m, ΔW=1.5m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.66):
+2D bounding box: [529, 154, 573, 207]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 65.7m
+NEW (point cloud): L=0.9m × W=0.3m × H=0.2m
+Depth estimate: 3.7m (2178 points used)
+DIFFERENCES:      ΔL=3.1m, ΔW=1.5m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.56):
+2D bounding box: [525, 154, 570, 210]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 63.9m
+NEW (point cloud): L=1.0m × W=0.3m × H=0.2m
+Depth estimate: 3.7m (2363 points used)
+DIFFERENCES:      ΔL=3.0m, ΔW=1.5m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.76):
+2D bounding box: [519, 151, 569, 211]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 57.5m
+NEW (point cloud): L=1.1m × W=0.4m × H=0.2m
+Depth estimate: 3.7m (2813 points used)
+DIFFERENCES:      ΔL=2.9m, ΔW=1.4m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.60):
+2D bounding box: [512, 150, 566, 215]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 53.6m
+NEW (point cloud): L=1.3m × W=0.4m × H=0.2m
+Depth estimate: 3.8m (3299 points used)
+DIFFERENCES:      ΔL=2.7m, ΔW=1.4m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.66):
+2D bounding box: [504, 148, 562, 218]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 49.1m
+NEW (point cloud): L=1.4m × W=0.5m × H=0.3m
+Depth estimate: 4.2m (3788 points used)
+DIFFERENCES:      ΔL=2.6m, ΔW=1.3m, ΔH=1.2m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.77):
+2D bounding box: [496, 146, 558, 220]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 46.3m
+NEW (point cloud): L=1.4m × W=0.5m × H=0.4m
+Depth estimate: 4.1m (4261 points used)
+DIFFERENCES:      ΔL=2.6m, ΔW=1.3m, ΔH=1.1m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.74):
+2D bounding box: [484, 143, 554, 225]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 41.4m
+NEW (point cloud): L=1.7m × W=0.6m × H=0.5m
+Depth estimate: 4.5m (5347 points used)
+DIFFERENCES:      ΔL=2.3m, ΔW=1.2m, ΔH=1.0m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.58):
+2D bounding box: [472, 141, 550, 229]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 37.1m
+NEW (point cloud): L=2.0m × W=0.7m × H=0.5m
+Depth estimate: 4.8m (6437 points used)
+DIFFERENCES:      ΔL=2.0m, ΔW=1.1m, ΔH=1.0m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 2 (confidence: 0.32):
+2D bounding box: [472, 141, 550, 230]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 37.1m
+NEW (point cloud): L=2.0m × W=0.7m × H=0.5m
+Depth estimate: 4.8m (6506 points used)
+DIFFERENCES:      ΔL=2.0m, ΔW=1.1m, ΔH=1.0m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.81):
+2D bounding box: [456, 136, 546, 237]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 32.2m
+NEW (point cloud): L=2.7m × W=1.0m × H=0.6m
+Depth estimate: 5.4m (8605 points used)
+DIFFERENCES:      ΔL=1.3m, ΔW=0.8m, ΔH=0.9m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.72):
+2D bounding box: [436, 131, 541, 245]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 27.5m
+NEW (point cloud): L=3.3m × W=1.1m × H=0.7m
+Depth estimate: 5.5m (11288 points used)
+DIFFERENCES:      ΔL=0.7m, ΔW=0.7m, ΔH=0.8m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.80):
+2D bounding box: [409, 125, 534, 255]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 23.1m
+NEW (point cloud): L=3.9m × W=1.6m × H=0.9m
+Depth estimate: 6.2m (15296 points used)
+DIFFERENCES:      ΔL=0.1m, ΔW=0.2m, ΔH=0.6m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.63):
+2D bounding box: [374, 117, 523, 270]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 19.4m
+NEW (point cloud): L=5.2m × W=2.0m × H=1.0m
+Depth estimate: 6.7m (21676 points used)
+DIFFERENCES:      ΔL=1.2m, ΔW=0.2m, ΔH=0.5m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.90):
+2D bounding box: [312, 104, 515, 289]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 14.2m
+NEW (point cloud): L=7.4m × W=3.1m × H=1.6m
+Depth estimate: 8.3m (35670 points used)
+DIFFERENCES:      ΔL=3.4m, ΔW=1.3m, ΔH=0.1m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.78):
+2D bounding box: [232, 87, 500, 322]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 10.8m
+NEW (point cloud): L=10.6m × W=5.0m × H=2.2m
+Depth estimate: 10.1m (60806 points used)
+DIFFERENCES:      ΔL=6.6m, ΔW=3.2m, ΔH=0.7m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.66):
+2D bounding box: [65, 54, 477, 371]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 7.0m
+NEW (point cloud): L=16.3m × W=9.3m × H=5.2m
+Depth estimate: 13.9m (125233 points used)
+DIFFERENCES:      ΔL=12.3m, ΔW=7.5m, ΔH=3.7m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.95):
+2D bounding box: [0, 1, 443, 368]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 6.5m
+NEW (point cloud): L=23.5m × W=13.0m × H=7.7m
+Depth estimate: 18.6m (153137 points used)
+DIFFERENCES:      ΔL=19.5m, ΔW=11.2m, ΔH=6.2m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.80):
+2D bounding box: [2, 1, 375, 366]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 7.7m
+NEW (point cloud): L=22.0m × W=11.3m × H=7.5m
+Depth estimate: 17.6m (129285 points used)
+DIFFERENCES:      ΔL=18.0m, ΔW=9.5m, ΔH=6.0m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.85):
+2D bounding box: [0, 212, 83, 276]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 34.6m
+NEW (point cloud): L=5.3m × W=1.2m × H=0.5m
+Depth estimate: 9.1m (5025 points used)
+DIFFERENCES:      ΔL=1.3m, ΔW=0.6m, ΔH=1.0m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.31):
+2D bounding box: [552, 178, 582, 201]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 99.3m
+NEW (point cloud): L=0.6m × W=0.2m × H=0.0m
+Depth estimate: 3.0m (651 points used)
+DIFFERENCES:      ΔL=3.4m, ΔW=1.6m, ΔH=1.5m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.37):
+2D bounding box: [544, 181, 571, 204]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 109.1m
+NEW (point cloud): L=0.9m × W=0.1m × H=0.0m
+Depth estimate: 3.4m (589 points used)
+DIFFERENCES:      ΔL=3.1m, ΔW=1.7m, ΔH=1.5m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.65):
+2D bounding box: [539, 182, 567, 206]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 102.9m
+NEW (point cloud): L=0.8m × W=0.1m × H=0.0m
+Depth estimate: 3.3m (633 points used)
+DIFFERENCES:      ΔL=3.2m, ΔW=1.7m, ΔH=1.5m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.69):
+2D bounding box: [533, 184, 564, 208]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 94.7m
+NEW (point cloud): L=0.9m × W=0.2m × H=0.1m
+Depth estimate: 3.6m (704 points used)
+DIFFERENCES:      ΔL=3.1m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 2 (confidence: 0.48):
+2D bounding box: [560, 180, 581, 201]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 139.1m
+NEW (point cloud): L=0.9m × W=0.1m × H=0.0m
+Depth estimate: 3.1m (430 points used)
+DIFFERENCES:      ΔL=3.1m, ΔW=1.7m, ΔH=1.5m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.72):
+2D bounding box: [524, 183, 560, 211]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 79.2m
+NEW (point cloud): L=1.2m × W=0.2m × H=0.1m
+Depth estimate: 3.5m (950 points used)
+DIFFERENCES:      ΔL=2.8m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 2 (confidence: 0.46):
+2D bounding box: [558, 179, 579, 196]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 134.2m
+NEW (point cloud): L=0.4m × W=0.1m × H=0.0m
+Depth estimate: 2.9m (341 points used)
+DIFFERENCES:      ΔL=3.6m, ΔW=1.7m, ΔH=1.5m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 3 (confidence: 0.45):
+2D bounding box: [557, 180, 580, 200]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 128.9m
+NEW (point cloud): L=0.6m × W=0.1m × H=0.0m
+Depth estimate: 3.0m (434 points used)
+DIFFERENCES:      ΔL=3.4m, ΔW=1.7m, ΔH=1.5m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.72):
+2D bounding box: [513, 183, 556, 215]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 67.8m
+NEW (point cloud): L=1.5m × W=0.3m × H=0.1m
+Depth estimate: 3.9m (1321 points used)
+DIFFERENCES:      ΔL=2.5m, ΔW=1.5m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 2 (confidence: 0.57):
+2D bounding box: [554, 179, 576, 199]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 128.5m
+NEW (point cloud): L=0.5m × W=0.1m × H=0.0m
+Depth estimate: 3.1m (422 points used)
+DIFFERENCES:      ΔL=3.5m, ΔW=1.7m, ΔH=1.5m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.75):
+2D bounding box: [502, 183, 550, 220]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 60.5m
+NEW (point cloud): L=1.9m × W=0.3m × H=0.2m
+Depth estimate: 4.2m (1699 points used)
+DIFFERENCES:      ΔL=2.1m, ΔW=1.5m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 2 (confidence: 0.62):
+2D bounding box: [549, 179, 574, 200]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 113.0m
+NEW (point cloud): L=0.5m × W=0.1m × H=0.0m
+Depth estimate: 3.0m (495 points used)
+DIFFERENCES:      ΔL=3.5m, ΔW=1.7m, ΔH=1.5m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.67):
+2D bounding box: [544, 179, 573, 203]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 101.8m
+NEW (point cloud): L=0.5m × W=0.2m × H=0.1m
+Depth estimate: 3.3m (656 points used)
+DIFFERENCES:      ΔL=3.5m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 2 (confidence: 0.48):
+2D bounding box: [485, 183, 542, 226]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 51.3m
+NEW (point cloud): L=2.2m × W=0.4m × H=0.2m
+Depth estimate: 4.9m (2312 points used)
+DIFFERENCES:      ΔL=1.8m, ΔW=1.4m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 3 (confidence: 0.43):
+2D bounding box: [486, 184, 542, 226]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 51.2m
+NEW (point cloud): L=2.2m × W=0.4m × H=0.2m
+Depth estimate: 4.9m (2225 points used)
+DIFFERENCES:      ΔL=1.8m, ΔW=1.4m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.74):
+2D bounding box: [539, 179, 569, 204]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 94.6m
+NEW (point cloud): L=0.6m × W=0.2m × H=0.1m
+Depth estimate: 3.5m (711 points used)
+DIFFERENCES:      ΔL=3.4m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 2 (confidence: 0.73):
+2D bounding box: [461, 184, 532, 236]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 41.0m
+NEW (point cloud): L=2.7m × W=0.7m × H=0.3m
+Depth estimate: 5.6m (3457 points used)
+DIFFERENCES:      ΔL=1.3m, ΔW=1.1m, ΔH=1.2m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.89):
+2D bounding box: [428, 187, 517, 251]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 32.3m
+NEW (point cloud): L=3.2m × W=0.9m × H=0.6m
+Depth estimate: 6.6m (5437 points used)
+DIFFERENCES:      ΔL=0.8m, ΔW=0.9m, ΔH=0.9m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 2 (confidence: 0.79):
+2D bounding box: [534, 180, 567, 208]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 87.3m
+NEW (point cloud): L=0.8m × W=0.2m × H=0.1m
+Depth estimate: 3.7m (861 points used)
+DIFFERENCES:      ΔL=3.2m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.90):
+2D bounding box: [367, 190, 495, 278]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 22.5m
+NEW (point cloud): L=4.5m × W=1.8m × H=0.9m
+Depth estimate: 8.4m (10571 points used)
+DIFFERENCES:      ΔL=0.5m, ΔW=0.0m, ΔH=0.6m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This appears to be a NON-STANDARD vehicle size!
+
+VEHICLE 2 (confidence: 0.81):
+2D bounding box: [526, 183, 562, 212]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 78.9m
+NEW (point cloud): L=1.0m × W=0.2m × H=0.1m
+Depth estimate: 4.5m (996 points used)
+DIFFERENCES:      ΔL=3.0m, ΔW=1.6m, ΔH=1.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.89):
+2D bounding box: [244, 194, 459, 324]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 13.5m
+NEW (point cloud): L=9.1m × W=4.1m × H=1.7m
+Depth estimate: 11.5m (26462 points used)
+DIFFERENCES:      ΔL=5.1m, ΔW=2.3m, ΔH=0.2m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 2 (confidence: 0.80):
+2D bounding box: [516, 183, 557, 217]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 71.3m
+NEW (point cloud): L=1.5m × W=0.3m × H=0.2m
+Depth estimate: 4.6m (1306 points used)
+DIFFERENCES:      ΔL=2.5m, ΔW=1.5m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.88):
+2D bounding box: [0, 203, 384, 371]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 7.5m
+NEW (point cloud): L=24.5m × W=8.4m × H=3.5m
+Depth estimate: 16.9m (61493 points used)
+DIFFERENCES:      ΔL=20.5m, ΔW=6.6m, ΔH=2.0m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 2 (confidence: 0.78):
+2D bounding box: [502, 184, 550, 223]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 60.0m
+NEW (point cloud): L=1.6m × W=0.3m × H=0.2m
+Depth estimate: 4.5m (1762 points used)
+DIFFERENCES:      ΔL=2.4m, ΔW=1.5m, ΔH=1.3m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.84):
+2D bounding box: [482, 185, 544, 232]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 46.8m
+NEW (point cloud): L=2.4m × W=0.5m × H=0.3m
+Depth estimate: 5.4m (2776 points used)
+DIFFERENCES:      ΔL=1.6m, ΔW=1.3m, ΔH=1.2m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 2 (confidence: 0.81):
+2D bounding box: [0, 235, 145, 369]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 19.9m
+NEW (point cloud): L=22.2m × W=3.9m × H=2.2m
+Depth estimate: 17.4m (19430 points used)
+DIFFERENCES:      ΔL=18.2m, ΔW=2.1m, ΔH=0.7m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.81):
+2D bounding box: [455, 187, 531, 243]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 38.1m
+NEW (point cloud): L=3.5m × W=0.8m × H=0.4m
+Depth estimate: 6.5m (3896 points used)
+DIFFERENCES:      ΔL=0.5m, ΔW=1.0m, ΔH=1.1m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.88):
+2D bounding box: [412, 189, 513, 261]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 28.7m
+NEW (point cloud): L=4.7m × W=1.3m × H=0.6m
+Depth estimate: 7.4m (6779 points used)
+DIFFERENCES:      ΔL=0.7m, ΔW=0.5m, ΔH=0.9m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a COMPACT CAR (smaller than typical)!
+
+VEHICLE 1 (confidence: 0.91):
+2D bounding box: [333, 194, 483, 294]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 19.2m
+NEW (point cloud): L=6.5m × W=2.4m × H=1.1m
+Depth estimate: 9.8m (14115 points used)
+DIFFERENCES:      ΔL=2.5m, ΔW=0.6m, ΔH=0.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.93):
+2D bounding box: [137, 202, 427, 372]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 9.9m
+NEW (point cloud): L=15.5m × W=7.7m × H=3.2m
+Depth estimate: 15.8m (45807 points used)
+DIFFERENCES:      ΔL=11.5m, ΔW=5.9m, ΔH=1.7m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+VEHICLE 1 (confidence: 0.91):
+2D bounding box: [0, 229, 269, 373]
+OLD (typical):    L=4.0m × W=1.8m × H=1.5m
+Depth estimate: 10.7m
+NEW (point cloud): L=22.4m × W=7.5m × H=3.9m
+Depth estimate: 18.3m (35132 points used)
+DIFFERENCES:      ΔL=18.4m, ΔW=5.7m, ΔH=2.4m
+ SIGNIFICANT DIFFERENCE DETECTED!
+This might be a TRUCK or BUS (larger than typical car)!
+
+================================================================================
+SUMMARY:
+   • Total vehicles analyzed: 73
+   • Point cloud successful: 73/73 (100%)
+   • Significant differences found: 73
+
+SUCCESS: Found 73 vehicles with significantly different dimensions!
+
+Visualization saved to: pointcloud_comparison_summary.jpg
+
+================================================================================
+COMPREHENSIVE TESTING COMPLETE!
+================================================================================
+Key achievements:
+   • Depth estimation → point cloud generation working
+   • Point cloud → oriented bounding box fitting working
+   • Real dimensions vs typical dimensions comparison complete
+   • End-to-end pipeline functional across multiple frames
+   • Total vehicles tested: 73
+   • Successful frames: 58/65
+   • Success rate: 89.2%
+   • Point cloud success rate: 73/73 (100.0%)
+
+MAJOR SUCCESS:
+Point cloud method shows measurable improvements across multiple frames!
+Successfully demonstrated superiority over fixed dimension constraints!

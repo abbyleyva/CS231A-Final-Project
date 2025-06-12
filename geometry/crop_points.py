@@ -36,4 +36,7 @@ def crop_points_from_2d_box(depth_map: np.ndarray, box: list, K: np.ndarray) -> 
     cam_coords = K_inv @ pixel_coords
     cam_coords = cam_coords * depths
 
+    ### trying to fix depth/height calc
+    cam_coords[1, :] = -cam_coords[1, :]
+
     return cam_coords.T  # (N, 3)
